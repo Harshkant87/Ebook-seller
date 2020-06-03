@@ -1,0 +1,27 @@
+<section>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Web Develpment Ebook
+      </h1><p class ="lead">Learn Web development front to back </p>
+      <form action="/charge" method="post">
+        <script
+         src="https://checkout.stripe.com/checkout.js"
+         class="stripe-button"
+         data-key="{{stripePublishableKey}}"
+         data-amount="2500"
+         data-name="Web development Ebook"
+         data-description="Ebook supported by Harsh Kant"
+         data-image="/img/marketplace.png"
+         data-locale="auto"
+        >
+
+        </script>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <img src="/img/book.png" alt="" class="img-fluid">
+    </div>
+  </div>
+</section>
